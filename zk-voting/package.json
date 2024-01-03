@@ -1,0 +1,24 @@
+{
+  "name": "zk-preimageverifier",
+  "version": "1.0.0",
+  "description": "Preimage verifier with witness generation and proving in JS",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hammurabi Mendes and Umut Turk",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "ethers": "^6.8.0",
+    "hardhat": "^2.18.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "commander": "^11.1.0",
+    "ffjavascript": "^0.2.62",
+    "snarkjs": "^0.7.2"
+  }
+}

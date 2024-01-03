@@ -1,0 +1,45 @@
+npm init
+
+/// -D or --save-dev: package will appear in your devDependencies, not dependencies
+npm install -D hardhat
+
+/// Testers and embedded ethereum network
+npm install -D ethers @nomiclabs/hardhat-ethers ethereum-waffle @nomiclabs/hardhat-waffle chai
+
+/// Run Hardhat, ask to create an empty configuration file
+/// Remove hardhat.config.js first if it already exists
+npx hardhat 
+
+/// Add this to the top of hardhat.config.js, before the modules declaration
+require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-ethers");
+
+/// Likely to use OpenZeppelin
+npm install @openzeppelin/contracts
+
+/// Create the directory for contracts, write the first contract (see example)
+mkdir contracts
+mkdir scripts
+
+/// Get HM's scripts (provided)
+ln <path>/blockchainInterface.mjs
+
+/// Get HM's ZK stuff you are using it (not used here, so ignore it)
+ln <path>/snark<X>-<Y> for all X,Y
+
+/// Make contracts in .sol files
+
+/// Compile with
+npx hardhat compile
+
+/// Create a directotry for tests, write the first test (see example)
+mkdir test
+
+/// Perform tests
+npx hardhat test
+
+/// Ethereum testnet information, including faucets
+https://ethereum.org/en/developers/docs/networks/#ethereum-testnets
+
+/// Runs the node
+npx hardhat node
